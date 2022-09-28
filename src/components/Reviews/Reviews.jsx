@@ -23,7 +23,7 @@ const Reviews = () => {
   return (
     <section className='review-list'>
       <h2 className='review-header'> Reviews </h2>
-      <ul>
+      <ul className='list-grid'>
         {reviews.map((reviews) => {
           return <ReviewsCard review={reviews} key={reviews.review_id} />;
         })}

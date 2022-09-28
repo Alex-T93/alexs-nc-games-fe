@@ -1,4 +1,4 @@
-.review-list {
+.categories-list {
     width: auto;
     padding: 2rem;
     border: 2px solid #2534ff;
@@ -16,12 +16,9 @@
   }
   
   
-  .review-header {
+  .categories-header {
     text-align: center;
     padding: 1rem;
     border: 2px solid #1a75fd;
     border-radius: 10px;
   }
- 
-
-  
