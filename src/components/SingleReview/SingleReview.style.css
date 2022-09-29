@@ -1,15 +1,14 @@
-  .category-card-list {
+.single-review-list {
     
     text-align: center;
     padding: 3rem;
     border: 2px solid #000000;
-    
   }
   
-  .category-title {
-  
+  .single-review-header {
     background-color:#faeee7;
     text-align: center;
     padding: 3rem;
     border: 2px solid #000000;
   }
+  

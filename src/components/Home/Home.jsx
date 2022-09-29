@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-
+import './Home.css'
 const Home = () => {
   const username = 'Alex';
   const [isLoggedIn] = useState(true);
@@ -9,7 +9,7 @@ const Home = () => {
 
   const handleReviewClick = (event) => {
     event.preventDefault();
-    navigate(`/api/review`);
+    navigate(`/api/reviews`);
   };
 
   const handleProfileClick = (event) => {
@@ -23,23 +23,21 @@ const Home = () => {
   };
 
   return (
-    <section className='homePage'>
+    <section className='home_page'>
     
-      <h2>Homepage</h2>
+      <h2 className='title'>Homepage</h2>
       {isLoggedIn ? (
         <section>
+        <section className='greeting'>
           <h3>Welcome {username}</h3>
-
+          </section>
          
         
-        <section>
+        <section className='home_page_list'>
             <h3>View Reviews</h3>
           <button className='top-button' onClick={handleReviewClick}>
             Reviews!{' '}
           </button>
-        </section>
-
-        <section>
             <h3>View Users!</h3>
           <button className='top-button' onClick={handleReviewClick}>
             Users!{' '}

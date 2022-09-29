@@ -1,0 +1,27 @@
+.title {
+    background-color:#faeee7;
+    text-align: center;
+    padding: 3rem;
+    border: 2px solid #000000;
+  }
+
+  .greeting {
+    background-color: #8bd3dd;
+    text-align: center;
+    padding: 3rem;
+    border: 2px solid #000000;
+  }
+  .home_page {
+    background-color: #8bd3dd;
+    text-align: center;
+    padding: 3rem;
+    border: 2px solid #000000;
+  }
+
+ .home_page_list{
+    background-color: #8bd3dd;
+    text-align: center;
+    padding: 3rem;
+    border: 2px solid #000000;
+  }
+

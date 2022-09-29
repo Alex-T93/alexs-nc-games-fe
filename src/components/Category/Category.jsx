@@ -2,9 +2,9 @@ import { useContext, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { LoadingContext } from '../../Contexts/Loading';
 import { customGetRequest } from '../../utils/api';
-import ReviewsCard from '../ReviewCard/ReviewsCard';
+import ReviewsCard from '../ReviewsCards/ReviewsCard';
 import Loading from '../Loading';
-
+import './Category.style.css'
 const Category = () => {
   const { isLoading, setIsLoading } = useContext(LoadingContext);
   const { category_slug } = useParams();
@@ -26,8 +26,9 @@ const Category = () => {
 
   return (
     <section className='reviews-list'>
+        
       <h2 className='reviews-header'> Reviews </h2>
-      <ul>
+      <ul className= 'reviews-list'>
         {reviewByCategory.map((review) => {
           return <ReviewsCard review={review} key={review.review_id} />;
         })}
