@@ -1,5 +1,5 @@
 .review-card-list {
-    
+    list-style: none;
     text-align: center;
     padding: 3rem;
     border: 2px solid #000000;

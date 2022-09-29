@@ -10,3 +10,10 @@ export const customGetRequest = (url, params) => {
   });
 };
 
+export const customPatchRequest = (reviewId, votes) => {
+    return gamesApi.patch(`reviews/${reviewId}`, { inc_votes: votes }).then((response) => {
+      return response.data;
+    });
+  };
+
+
