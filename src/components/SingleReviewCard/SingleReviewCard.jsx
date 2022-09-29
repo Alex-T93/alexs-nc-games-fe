@@ -1,8 +1,20 @@
+import { useState } from 'react';
+import { customPatchRequest } from '../../utils/api';
 import './SingleReviewCard.style.css';
 
 const SingleReviewCard = (props) => {
   const { singleReview } = props;
+ 
+  const [vote, setVote] = useState(singleReview.votes);
 
+  const handleClick = (num) => {
+    setVote((vote) => (vote += num)) ;
+    customPatchRequest(singleReview.review_id, num)
+    .catch(() => {
+      setVote((vote) => (vote -= num)
+    );
+  })
+};
   return (
     <section className='review-list'>
       <ul className='review-card-list'>
@@ -19,7 +31,9 @@ const SingleReviewCard = (props) => {
           <p>{singleReview.comment_count}</p>
           <br />
           <h4>Votes: </h4>
-          <p>{singleReview.votes}</p>
+          <p>{vote}</p>
+          <button onClick={() => handleClick(1)}>Up Vote!</button>
+          <button onClick={() => handleClick(-1)}>Down Vote! </button>
           <br />
           <img
           src={singleReview.review_img_url
