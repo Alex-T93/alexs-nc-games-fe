@@ -9,6 +9,8 @@ import Categories from './components/Categories/Categories';
 import { useState } from 'react';
 import Category from './components/Category/Category';
 import SingleReview from './components/SingleReview/SingleReview';
+import Comments from './components/Comments/Comments';
+import Users from './components/Users/Users';
 
 
 function App() {
@@ -28,7 +30,9 @@ function App() {
             path='api/categories'
             element={<Categories categories={categories} setCategories={setCategories} />}
           />
-             <Route path='api/reviews:category_slug' element={<Category />} />
+         <Route path='api/reviews:category_slug' element={<Category />} />
+         <Route path='api/reviews/:review_id/comments' element={<Comments />} />
+         <Route path='api/users' element={<Users />}/>
         </Route>
       </Routes>
     </div>

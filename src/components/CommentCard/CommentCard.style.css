@@ -1,17 +1,20 @@
-  .category-card-list {
-    
+.comments-inner-list {
+    list-style: none;
     text-align: center;
     padding: 3rem;
     border: 2px solid #000000;
     border-radius: 5rem;
-    
   }
   
-  .category-title {
-  
+  .comments-header {
     background-color:#faeee7;
     text-align: center;
     padding: 3rem;
     border: 2px solid #000000;
   }
-  
+  .comments-list {
+    list-style: none;
+    text-align: center;
+    padding: 3rem;
+    border: 2px solid #000000;
+  }

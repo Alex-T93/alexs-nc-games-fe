@@ -26,7 +26,7 @@ const Categories = (props) => {
   return (
     <section className='categories-list'>
       <h2 className='categories-header'> categories </h2>
-      <ul>
+      <ul className='categories-list'>
         {categories.map((category) => {
           uniqueKey++;
           return <CategoriesCards category={category} key={uniqueKey} />;

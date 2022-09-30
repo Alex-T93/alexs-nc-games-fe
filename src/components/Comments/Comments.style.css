@@ -1,14 +1,14 @@
-.categories-list {
+.comments-list {
+    list-style: none;
     text-align: center;
     padding: 3rem;
     border: 2px solid #000000;
-   list-style: none;
+    
   }
   
-  .categories-header {
+  .comments-header {
     background-color:#faeee7;
     text-align: center;
     padding: 3rem;
     border: 2px solid #000000;
   }
-  

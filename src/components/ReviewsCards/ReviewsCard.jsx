@@ -16,9 +16,12 @@ const ReviewsCard = (props) => {
           <p>{review.comment_count}</p>
           <h4>Votes: </h4>
           <p>{review.votes}</p>
-          
           <Link to={`/api/reviews/${review.review_id}`}>
             Find out more about this Review
+          </Link>
+          <br />
+          <Link to={`/api/reviews/${review.review_id}/comments`}>
+            View the comments on this Review
           </Link>
         </li>
       </ul>
