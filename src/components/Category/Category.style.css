@@ -1,15 +1,16 @@
-.review-list {
-    
-    text-align: center;
-    padding: 3rem;
-    border: 2px solid #000000;
-    
-  }
+.reviews-list {
+  text-align: center;
+  padding: 3rem;
+  border: 2px solid #000000;
+  
+}
+  
   
   .reviews-header {
-  
     background-color:#faeee7;
     text-align: center;
     padding: 3rem;
     border: 2px solid #000000;
   }
+
+ 

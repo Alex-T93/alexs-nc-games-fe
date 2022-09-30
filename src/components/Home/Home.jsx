@@ -12,9 +12,9 @@ const Home = () => {
     navigate(`/api/reviews`);
   };
 
-  const handleProfileClick = (event) => {
+  const handleUsersClick = (event) => {
     event.preventDefault();
-    navigate(`/api/users/${username}`);
+    navigate(`/api/users`);
   };
 
   const handleCreateProfileClick = (event) => {
@@ -39,7 +39,7 @@ const Home = () => {
             Reviews!{' '}
           </button>
             <h3>View Users!</h3>
-          <button className='top-button' onClick={handleReviewClick}>
+          <button className='top-button' onClick={handleUsersClick}>
             Users!{' '}
           </button>
         </section>

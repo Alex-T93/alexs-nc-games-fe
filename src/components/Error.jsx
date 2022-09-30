@@ -2,7 +2,7 @@ const ErrorComponent = (props) => {
     const { message } = props;
     return (
       <section>
-        <h2 id='main-content'>Error</h2>
+        <h2 id='main-content'>Whoopsie We have a problem!!</h2>
         <p>{message}</p>
         <img
           src='https://cdn-icons-png.flaticon.com/512/738/738884.png'
